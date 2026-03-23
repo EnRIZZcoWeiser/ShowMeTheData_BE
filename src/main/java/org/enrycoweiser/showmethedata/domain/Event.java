@@ -26,4 +26,9 @@ public class Event extends StandardEntity {
 
     @Column(nullable = false)
     private String tier;
+
+    @Override
+    public String toString() {
+        return code + " - " + name + Integer.toString(year) + " " + stage;
+    }
 }

@@ -19,4 +19,9 @@ public class Team extends StandardEntity {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_region", nullable = false)
     private Region region;
+
+    @Override
+    public String toString() {
+        return code + " - " + fullName;
+    }
 }

@@ -20,4 +20,9 @@ public class Region extends StandardEntity {
 
     @Column(nullable = false)
     private String active;
+
+    @Override
+    public String toString() {
+        return code + " - " + fullName;
+    }
 }
