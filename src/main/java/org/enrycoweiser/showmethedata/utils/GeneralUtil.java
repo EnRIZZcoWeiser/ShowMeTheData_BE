@@ -1,6 +1,9 @@
 package org.enrycoweiser.showmethedata.utils;
 
 public class GeneralUtil {
+    public static final String YES = "Y";
+    public static final String NO = "N";
+
     public static final String STATUS_OK = "OK";
     public static final String STATUS_KO = "KO";
 

@@ -5,6 +5,8 @@ import lombok.Getter;
 import lombok.Setter;
 import org.enrycoweiser.showmethedata.standard.StandardEntity;
 
+import java.util.Objects;
+
 @Getter
 @Setter
 @Entity
@@ -23,5 +25,19 @@ public class Team extends StandardEntity {
     @Override
     public String toString() {
         return code + " - " + fullName;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if(this == o) {
+            return true;
+        }
+
+        if(o == null || getClass() != o.getClass()) {
+            return false;
+        }
+
+        Team team = (Team) o;
+        return Objects.equals(getId(), team.getId());
     }
 }
