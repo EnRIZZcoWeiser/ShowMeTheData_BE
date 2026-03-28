@@ -10,7 +10,7 @@ import org.enrycoweiser.showmethedata.standard.StandardEntity;
 @Getter
 @Setter
 @Entity
-@Table(name = "event")
+@Table(name = "event", schema = "backend")
 public class Event extends StandardEntity {
     @Column(nullable = false)
     private String code;

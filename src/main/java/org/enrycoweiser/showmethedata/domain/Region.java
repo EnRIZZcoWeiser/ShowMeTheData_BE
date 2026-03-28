@@ -12,7 +12,7 @@ import java.util.Objects;
 @Getter
 @Setter
 @Entity
-@Table(name = "region")
+@Table(name = "region", schema = "backend")
 public class Region extends StandardEntity {
     @Column(nullable = false, unique = true)
     private String code;

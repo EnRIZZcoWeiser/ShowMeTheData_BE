@@ -13,7 +13,7 @@ import java.util.Objects;
 @Getter
 @Setter
 @Entity
-@Table(name = "operator")
+@Table(name = "operator", schema = "backend")
 public class Operator extends StandardEntity {
     @Column(nullable = false)
     private String role;

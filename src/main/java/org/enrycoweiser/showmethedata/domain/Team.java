@@ -10,7 +10,7 @@ import java.util.Objects;
 @Getter
 @Setter
 @Entity
-@Table(name = "team")
+@Table(name = "team", schema = "backend")
 public class Team extends StandardEntity {
     @Column(nullable = false, unique = true)
     private String code;

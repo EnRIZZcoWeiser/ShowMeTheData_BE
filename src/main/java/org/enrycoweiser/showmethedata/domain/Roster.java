@@ -8,7 +8,7 @@ import org.enrycoweiser.showmethedata.standard.StandardEntity;
 @Getter
 @Setter
 @Entity
-@Table(name = "roster")
+@Table(name = "roster", schema = "backend")
 public class Roster extends StandardEntity {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_team", nullable = false)

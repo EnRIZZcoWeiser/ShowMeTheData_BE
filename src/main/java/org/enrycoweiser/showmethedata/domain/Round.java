@@ -8,7 +8,7 @@ import org.enrycoweiser.showmethedata.standard.StandardEntity;
 @Getter
 @Setter
 @Entity
-@Table(name = "round")
+@Table(name = "round", schema = "backend")
 public class Round extends StandardEntity {
     @Column(name = "entry_time", nullable = false, unique = false)
     private Integer entryTime;

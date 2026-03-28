@@ -11,7 +11,7 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
-@Table(name = "played_map")
+@Table(name = "played_map", schema = "backend")
 public class PlayedMap extends StandardEntity {
     @Column(nullable = false, unique = false)
     private String name;

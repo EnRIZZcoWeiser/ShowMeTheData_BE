@@ -10,7 +10,7 @@ import java.time.LocalDate;
 @Getter
 @Setter
 @Entity
-@Table(name = "match")
+@Table(name = "match", schema = "backend")
 public class Match extends StandardEntity {
     @Column(nullable = false)
     private LocalDate date;

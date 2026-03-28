@@ -8,7 +8,7 @@ import org.enrycoweiser.showmethedata.standard.StandardEntity;
 @Getter
 @Setter
 @Entity
-@Table(name = "operator_ban")
+@Table(name = "operator_ban", schema = "backend")
 public class OperatorBan extends StandardEntity {
     @Column(nullable = false, unique = false)
     private String role;

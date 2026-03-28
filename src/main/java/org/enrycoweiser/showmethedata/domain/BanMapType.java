@@ -10,7 +10,7 @@ import org.enrycoweiser.showmethedata.standard.StandardEntity;
 @Getter
 @Setter
 @Entity
-@Table(name = "ban_map_type")
+@Table(name = "ban_map_type", schema = "backend")
 public class BanMapType extends StandardEntity {
     @Column(nullable = false, unique = true)
     private String code;

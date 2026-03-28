@@ -9,7 +9,7 @@ import java.time.LocalDate;
 @Getter
 @Setter
 @Entity
-@Table(name = "quarantine")
+@Table(name = "quarantine", schema = "backend")
 public class Quarantine extends StandardEntity {
     @Column(name = "start_date", nullable = false)
     private LocalDate startDate;

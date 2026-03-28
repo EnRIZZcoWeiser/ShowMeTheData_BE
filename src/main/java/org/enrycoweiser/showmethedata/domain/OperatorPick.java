@@ -8,7 +8,7 @@ import org.enrycoweiser.showmethedata.standard.StandardEntity;
 @Getter
 @Setter
 @Entity
-@Table(name = "operator_pick")
+@Table(name = "operator_pick", schema = "backend")
 public class OperatorPick extends StandardEntity {
     @Column(nullable = false, unique = false)
     private String player;
