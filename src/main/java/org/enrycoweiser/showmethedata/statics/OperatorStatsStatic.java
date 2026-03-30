@@ -49,7 +49,8 @@ public class OperatorStatsStatic {
                     if(team.equals(teamBanning) || !ban.getRole().equals(myTeamRole)) {
                         continue;
                     }
-                } else if((ban.getTeam().equals(teamA) && ban.getRole().equals(teamARole)) || (ban.getTeam().equals(teamB) && ban.getRole().equals(teamBRole))) {
+                } else if((ban.getTeam().equals(teamA) && ban.getRole().equals(teamARole)) ||
+                            (ban.getTeam().equals(teamB) && ban.getRole().equals(teamBRole))) {
                     continue;
                 }
 

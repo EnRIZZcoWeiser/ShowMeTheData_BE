@@ -32,7 +32,7 @@ public class QueryDtoRepository {
         sql.append("    WHERE 1=1 ");
 
         if(team != null && !team.isEmpty())     sql.append(" AND t.code = :teamCode ");
-        if(event != null && !event.isEmpty())   sql.append(" AND m.event_code = :event ");
+        if(event != null && !event.isEmpty())   sql.append(" AND m.event.code = :event ");
         if(fromDate != null)                    sql.append(" AND m.date >= :fromDate ");
         if(toDate != null)                      sql.append(" AND m.date <= :toDate ");
 
@@ -54,7 +54,7 @@ public class QueryDtoRepository {
             sql.append("AND ((ta.code = :teamCode AND op.role = r.team_a_role) ");
             sql.append("OR (tb.code = :teamCode AND op.role = r.team_b_role)) ");
         }
-        if(event != null)    sql.append(" AND m.event_code = :event ");
+        if(event != null)    sql.append(" AND m.event.code = :event ");
         if(fromDate != null) sql.append(" AND m.date >= :fromDate ");
         if(toDate != null)   sql.append(" AND m.date <= :toDate ");
 
