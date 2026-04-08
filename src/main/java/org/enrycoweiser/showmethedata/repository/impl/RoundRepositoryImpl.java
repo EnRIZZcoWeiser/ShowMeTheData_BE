@@ -20,6 +20,8 @@ public class RoundRepositoryImpl implements MyRoundRepository {
         hql.append("from Round r where 1=1 ");
         if(event != null && !event.isEmpty()) {
             hql.append("and r.playedMap.match.event.code = :event ");
+        } else {
+            hql.append("and r.playedMap.match.event.code in ('EML', 'SAL', 'NAL') ");
         }
         if(team != null && !team.isEmpty()) {
             hql.append("and (r.playedMap.match.teamA.code = :team ");
